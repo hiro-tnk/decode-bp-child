@@ -4,4 +4,15 @@
 Theme Name: Decode-BP-child
 Template: decode
 */
-
+.activity-meta a.button{{
+background-color: transparent ;
+border: 0px ;
+}
+a.like::before, a.unlike::before{
+content:'\e0d4  '; /*THUMBS UP*/
+font-family:wp-svg-plugin-icon-set1;
+text-shadow: black 0.5px 0.5px 0px;
+}
+a.unlike::before{
+color:gold;
+}
