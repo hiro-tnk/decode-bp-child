@@ -4,9 +4,9 @@
 Theme Name: Decode-BP-child
 Template: decode
 */
-#buddypress .activity-meta a.button{{
-background-color: transparent ;
-border: 0px ;
+#buddypress .activity-meta a.button,  #buddypress .activity-meta a.button :hover {
+    border: 0px;
+    background-color: transparent;
 }
 a.like::before, a.unlike::before{
 content:'\e0d4  '; /*THUMBS UP*/
