@@ -16,3 +16,11 @@ text-shadow: black 0.5px 0.5px 0px;
 a.unlike::before{
 color:gold;
 }
+a.acomment-reply.button:before {
+    content: '\e06d';
+    font-family: wp-svg-plugin-icon-set1;
+}
+a.button.delete-activity:before, a.acomment-delete:before {
+    content: '\e0a8';
+    font-family: wp-svg-plugin-icon-set1;
+}
