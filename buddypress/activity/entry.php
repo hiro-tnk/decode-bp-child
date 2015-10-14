@@ -70,7 +70,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 				<?php if ( bp_activity_can_comment() ) : ?>
 
                     <a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>">
-                    <?php if(wp_is_mobile()){printf( __( '%s comment', 'buddypress' ), bp_activity_get_comment_count() );}else{printf( __( '%s', 'buddypress' ), bp_activity_get_comment_count() );} ?></a>
+                    <?php if(!wp_is_mobile()){printf( __( '%s comment', 'buddypress' ), bp_activity_get_comment_count() );}else{printf( __( '%s', 'buddypress' ), bp_activity_get_comment_count() );} ?></a>
 
 				<?php endif; ?>
 
