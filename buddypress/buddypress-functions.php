@@ -223,7 +223,7 @@ class BP_Legacy extends BP_Theme_Compat {
 
 		// LTR
 		if ( ! is_rtl() && isset( $ltr['location'], $ltr['handle'] ) ) {
-			wp_enqueue_style( 'bp-legacy', $ltr['location'], array(), $this->version, 'screen' );
+			wp_enqueue_style( 'bp-legacy-css', $ltr['location'], array(), $this->version, 'screen' );
 
 			if ( $min ) {
 				wp_style_add_data( $ltr['handle'], 'suffix', $min );
